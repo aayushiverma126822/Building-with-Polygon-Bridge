@@ -1,12 +1,12 @@
-# FxPortal Project
+# Building-with-Polygon-Bridge
 
-This is the first project on Polygon-Advance,  I deployed NFTs on the Ethereum Goerli network. Then, I approved and finally deposited from Ethereum to Polygon using  the Polygon Bridge.
+FxPortal marks the advent of Polygon-Advance. In this maiden project, I've navigated the intricate realm of NFTs, deploying them on the Ethereum sepolia network. Then, with deftness, I traversed the realms, approving and depositing from Ethereum to Polygon using the Polygon Bridge.
 
-## Getting Started
+## Quick Start
 
-### Executing program
+### Running the Program
 
-Download the codes by downloading the entire repository which will give you access to other contencts of the repository. Navigate to the ERC721A project directory,  run:
+Begin your journey by downloading the entire repository. This grants you access to a plethora of contents within. Navigate to the ERC721A project directory and execute:
 
 ```shell
 npm install
@@ -14,37 +14,37 @@ npm install
 
 ### Deploying the ERC721A Contract
 
-Before deploying, make sure to rename ".env.example" to ".env" and provide your wallet private key where required i.e "PRIVATE_KEY= 'your wallet private key'". Run the following command to deploy the ERC721A contract to the Goerli Ethereum Testnet:
+Prepare for deployment! Ensure to rename ".env.example" to ".env" and furnish your wallet's private key where indicated, like so: "PRIVATE_KEY= 'your wallet private key'". Now, embark on the deployment voyage with the following command:
 
 ``` shell
-npx hardhat run scripts/deploy.js --network goerli 
+npx hardhat run scripts/deploy.js --network sepolia
 ```
 
-The script will deploy the contract and provide the address of the contract in the console and also in the "contractAddress.js" file in the metadata folder.
+Witness the contract unfurl before your eyes, as its address materializes both in the console and the "contractAddress.js" file within the metadata folder.
 
 ### Batch Mint NFTs
 
-Run the following command to batch mint NFTs using the deployed ERC721 contract:
+Engage in the mass creation of NFTs! Execute the following command to mint them in bulk, courtesy of the deployed ERC721 contract:
 
 ``` shell
-npx hardhat run scripts/mint.js --network goerli
+npx hardhat run scripts/mint.js --network sepolia
 ```
 
-The script will mint the specified number of NFTs and assign them to your address.
+Behold, as the specified number of NFTs manifest and find refuge in your address.
 
 ### Approve and Deposit NFTs to Polygon Mumbai
 
-Run the following commands to approve and deposit the minted NFTs from Ethereum to the Polygon Mumbai network using the FxPortal Bridge:
+Continue your journey by granting approval and seamlessly transporting the minted NFTs from Ethereum to the Polygon Mumbai network, employing the FxPortal Bridge. Execute the following commands:
 
 ```shell
-npx hardhat run scripts/approveDeposit.js --network goerli
+npx hardhat run scripts/approveDeposit.js --network sepolia
 ```
 
-## Authors
+## Author
 
-Harsh shende
-
+ayushiverma126822
 
 ## License
 
-This project is licensed under the MIT License. For details, see the [LICENSE](LICENSE) file.
+This project is licensed under the MIT License. For details, refer to the [LICENSE](LICENSE) file.
+- - -
